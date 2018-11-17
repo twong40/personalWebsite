@@ -9,6 +9,19 @@ section {
 p {
     margin: 20px;
 }
+a, a:focus, a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+a {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.single-service a {
+  color: #000280;
+}
 /*navbar*/
 .nav-border {
     border-bottom: solid;
@@ -119,10 +132,32 @@ input.btn-primary {
     overflow-x: hidden;
   }
 }
+#about-text {
+  font-family: "Poppins", sans-serif;
+  color:#FFF !important;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.project-text {
+  font-family: "Poppins", sans-serif;
+  margin: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
 #title {
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 36px;
   color: #222222;
+  padding-bottom: 30px;
+}
+#title-about {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #FFF;
   padding-bottom: 10px;
 }
 #nav-options {
@@ -136,4 +171,76 @@ input.btn-primary {
 
 .dark {
   color: #000;
+}
+.primary-btn {
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
+.p1-gradient-bg, .primary-btn, .primary-btn2:hover,.banner-area, .myself-wrap .desc .talk-btn, .single-feature:hover, .generic-banner {
+  background-image: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  background-image: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+}
+
+.p1-gradient-color, .single-service a:hover {
+  background: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  background: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  background: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.primary-btn:focus {
+  outline: none;
+}
+.primary-btn span {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  right: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.primary-btn:hover {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+.form-area input {
+  padding: 15px;
+}
+
+.form-area input, .form-area textarea {
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.form-area textarea {
+  height: 180px;
+  margin-top: 0px;
+}
+
+.myself-wrap .desc .talk-btn {
+  border: 1px solid transparent;
+  color: #fff;
+  padding: 12px 70px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 400;
 }

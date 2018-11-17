@@ -1,0 +1,139 @@
+section {
+    padding: 80px 0;
+}
+.page {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+p {
+    margin: 20px;
+}
+/*navbar*/
+.nav-border {
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+.nav-link:not(.active):hover {
+    color:#000 !important;
+}
+/*header*/
+header {
+  padding: 156px 0 100px;
+  background: linear-gradient(20deg, #ABDCFF, #0396FF);
+
+}
+#about h2, #projects h2 {
+    margin-bottom: 20px;
+}
+
+/*project section*/
+#projects p {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.project {
+  margin-top: 20px;
+  height: 210px;
+  width: 400px;
+  transition: 0.6s ease;
+  will-change: filter, opacity, cursor;
+}
+
+.project:hover {
+  cursor: pointer;
+  filter: blur(2px);
+  transition: 0.6s ease;
+  opacity: 0.7;
+}
+.img-thumbnail {
+    border-color: black;
+}
+#project-icon.resize {
+  width: 50%;
+}
+
+/*contact section*/
+#contact {
+    background-color: rgb(233, 235, 238);
+}
+
+#contact h2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+input, textarea {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #CCD1D9;
+    width: 100%;
+    background: #F8F9FA;
+}
+
+.contact-form {
+    padding: 0rem 3.4rem;
+}
+input.btn-primary {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin: 30px 0px;
+}
+
+.btn-social {
+    color: #505050;
+    margin: 0% 2%;
+}
+#resume:hover {
+    color: #990000;
+}
+
+#linkedin:hover {
+    color: #0077B5;
+}
+
+#github:hover {
+    color: #6e5494;
+}
+
+#email:hover {
+    color: #006600;
+}
+
+@media (max-width: 991px) {
+  #about p {
+    text-align: center;
+  }
+  .contact-form {
+    padding: 0rem 1rem;
+  }
+  .navbar-nav {
+    height: auto;
+    max-height: 400px;
+    overflow-x: hidden;
+  }
+}
+#title {
+  font-weight: 600;
+  font-size: 36px;
+  color: #222222;
+  padding-bottom: 10px;
+}
+#nav-options {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.light {
+  color: #fff;
+}
+
+.dark {
+  color: #000;
+}
